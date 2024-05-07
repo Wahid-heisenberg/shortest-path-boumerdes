@@ -13,7 +13,7 @@ json_file_path = os.path.join(os.path.dirname(__file__),  'town_coordinates.json
 # Load JSON data from the file
 with open(json_file_path, "r") as json_file:
     data = json.load(json_file)
-    
+
 # Create a graph
 G = nx.Graph()
 
@@ -65,8 +65,8 @@ def find_shortest_path_with_visualization( source_node, target_node):
     return f"Shortest path from {source_node} to {target_node}: {shortest_path}"
 
 # Find the shortest path between two towns and visualize the graph
-source_town = "Boumerdes"
-target_town = "Boudouaou"
-result = find_shortest_path_with_visualization( source_town, target_town)
+# source_town = "Boumerdes"
+# target_town = "Boudouaou"
+# result = find_shortest_path_with_visualization( source_town, target_town)
 
-print(result)
+# print(result)
