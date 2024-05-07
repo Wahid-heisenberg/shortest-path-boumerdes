@@ -53,7 +53,7 @@ for node, (x, y) in pos.items():
 # Highlight the shortest path edges with blue color
 path_edges = [(shortest_path[i], shortest_path[i + 1]) for i in range(len(shortest_path) - 1)]
 
-nx.draw_networkx_edges(G, pos, edgelist=path_edges, edge_color='blue', width=2.0)
+nx.draw_networkx_edges(G, pos, edgelist=path_edges, edge_color='blue', width=5.0)
 
 print(f"Shortest path from {source_node} to {target_node}: {shortest_path}")
 plt.title("Graph of Towns with Shared Borders")
