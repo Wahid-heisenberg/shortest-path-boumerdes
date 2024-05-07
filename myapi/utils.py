@@ -30,8 +30,8 @@ for town, neighbors in bordering_towns.items():
             G.add_edge(town, neighbor, weight=distance)
 
 # Find shortest path between two nodes using A* algorithm and haversine distance
-source_node = "Ammal"  # Example source node
-target_node = "Corso"  # Example target node
+source_node = "Zemmouri"  # Example source node
+target_node = "Dellys"  # Example target node
 
 shortest_path = nx.shortest_path(G, source=source_node, target=target_node, weight="weight", method="dijkstra")
 
@@ -55,7 +55,7 @@ path_edges = [(shortest_path[i], shortest_path[i + 1]) for i in range(len(shorte
 
 nx.draw_networkx_edges(G, pos, edgelist=path_edges, edge_color='blue', width=2.0)
 
+print(f"Shortest path from {source_node} to {target_node}: {shortest_path}")
 plt.title("Graph of Towns with Shared Borders")
 plt.show()
 
-print(f"Shortest path from {source_node} to {target_node}: {shortest_path}")
