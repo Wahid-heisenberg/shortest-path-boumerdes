@@ -37,6 +37,7 @@ def find_bordering_towns(towns_data, threshold_km=10):
     bordering_towns["Djinet"].append("Bordj Menaïel")
     bordering_towns["Zemmouri"].append("Djinet")  
     bordering_towns["Zemmouri"].append("Dellys")
-    
+    bordering_towns["Zemmouri"].append("Iseers")
+
     
     return bordering_towns
